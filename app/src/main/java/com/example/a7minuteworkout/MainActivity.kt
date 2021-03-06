@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         binding.llStart.setOnClickListener {
             Toast.makeText(
                 this@MainActivity,
-                "Time to start the exercise.",
+                "Start the exercise.",
                 Toast.LENGTH_SHORT
             ).show()
         }
