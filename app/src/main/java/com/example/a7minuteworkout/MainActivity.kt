@@ -29,3 +29,21 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+
+/* import kotlinx.android.synthetic.main.activity_main.*
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        llStart.setOnClickListener {
+            Toast.makeText(
+                    this@MainActivity,
+                    "Time to start the exercise.",
+                    Toast.LENGTH_SHORT
+            ).show()
+        }
+    }
+} */
