@@ -2,15 +2,9 @@ package com.example.a7minuteworkout
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import com.example.a7minuteworkout.databinding.ActivityExerciseBinding
 
-private val toolbar_exercise_activity: Toolbar?
-    get() {
-        TODO("Not yet implemented")
-    }
-
-class ExerciseActivity : AppCompatActivity() {
+class ExerciseActivity() : AppCompatActivity() {
 
     private lateinit var binding: ActivityExerciseBinding
 
@@ -19,20 +13,20 @@ class ExerciseActivity : AppCompatActivity() {
         binding = ActivityExerciseBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(toolbar_exercise_activity)
+        setSupportActionBar(binding.toolbarExerciseActivity)
         val actionbar = supportActionBar
-        if(actionbar != null){
+        if (actionbar != null) {
             actionbar.setDisplayHomeAsUpEnabled(true)
         }
-        toolbar_exercise_activity?.setNavigationOnClickListener {
+
+        binding.toolbarExerciseActivity.setNavigationOnClickListener {
             onBackPressed()
         }
     }
 }
 
-//class ExerciseActivity : AppCompatActivity() {
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_exercise)
-//    }
-//}
+//Kotlin Synthetic (Deprecated) - Migrate to View Binding
+//Fragments
+//https://www.youtube.com/watch?v=MXZz438aCDM
+//private var _binding: FragmentHomeBinding? = null
+//private val binding get() = _binding!!
