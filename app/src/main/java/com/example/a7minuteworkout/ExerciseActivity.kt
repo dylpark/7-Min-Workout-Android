@@ -19,10 +19,6 @@ class ExerciseActivity : AppCompatActivity() {
         binding = ActivityExerciseBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_exercise)
-
         setSupportActionBar(toolbar_exercise_activity)
         val actionbar = supportActionBar
         if(actionbar != null){
@@ -32,5 +28,11 @@ class ExerciseActivity : AppCompatActivity() {
             onBackPressed()
         }
     }
-
 }
+
+//class ExerciseActivity : AppCompatActivity() {
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        setContentView(R.layout.activity_exercise)
+//    }
+//}
